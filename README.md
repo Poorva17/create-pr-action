@@ -1,6 +1,7 @@
 # create-pr-action
 
 
+
 A Github Action which automatically creates pull request (PR) from one branch against another branch if it is ahead of another branch
 HEAD_BRANCH - branch to raise PR from
 BASE_BRANCH - branch against which PR is raised
