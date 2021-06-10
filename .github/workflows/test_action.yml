@@ -1,0 +1,20 @@
+name: Testing action to create PR
+
+on:
+  push:
+    branches:
+      - release
+
+jobs:
+  create-pr-against-master-job:
+    runs-on: ubuntu-latest
+    name: create PR
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: '0'
+      - run: exit 0
+      - name: Create PR
+        uses: poorva17/create-pr-action@main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

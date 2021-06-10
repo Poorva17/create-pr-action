@@ -1,0 +1,9 @@
+# action.yml
+name: 'Create PR from one branch against another branch'
+description: 'Action to automatically create PR to keep two branches in sync. For example, creates PR for hotfixes pushed to
+release branch against Master/Main branch'
+author: 'Poorva Gokhale'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
