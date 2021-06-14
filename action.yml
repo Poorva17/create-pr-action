@@ -2,6 +2,7 @@
 name: 'Create PR from one branch against another branch'
 description: 'Action to automatically create PR to keep two branches in sync.'
 author: 'Poorva Gokhale'
+lable: 'git-pull-request'
 
 runs:
   using: 'docker'
